@@ -1,0 +1,30 @@
+.root {
+    --dark: #0d1117;
+    --background: #21252c;   
+}
+
+h1 {
+    color: #ffff;
+}
+
+h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3, li {
+    color: #495059; 
+}
+
+p {
+    color: #ffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+}
+
+body {
+    background-color: #21252c;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+}
