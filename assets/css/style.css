@@ -13,17 +13,7 @@
 p {
     color: #ffff; 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px; 
-}
-
-h1 {
-    text-transform: uppercase;
-    color: #ffff;
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    margin-right: 300px;
+    font-size: 16px;
 }
 
 hr {
@@ -43,7 +33,6 @@ h2, h3 {
 }
 
 /* Header and Navigation Bar */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -52,14 +41,6 @@ h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0d1117;
     line-height: 22px;
-}
-
-h1::first-line {
-    text-transform: uppercase;
-    color: #ffff;
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 700;
-    font-style: normal;
 }
 
 .logo {
@@ -71,6 +52,24 @@ h1::first-line {
 .logo:hover {
     opacity: 50%;
     transition: all 0.3s ease 0s;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #ffff;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    margin-right: 300px;
+}
+
+h1::first-line {
+    text-transform: uppercase;
+    color: #ffff;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .nav-links {
@@ -98,14 +97,14 @@ h1::first-line {
 a:visited {
     color: #495059;
 }
+/* End of Header and Navigation Bar */
 
 /* Hero */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 22px;
-    margin: 275px 100px 275px 100px;
+    margin: 270px 100px 270px 100px;
     line-height: 22px;
 }
 
@@ -113,102 +112,139 @@ a:visited {
     width: 225px;
     height: 225px;
     border-radius: 100%;
+    margin: 0px 25px 0px 0px;
+
 }
 
 .hero img:hover {
-    opacity: 80%;
+    opacity: 50%;
     transition: all 0.3s ease 0s;
-}
-
-.hero p {
-    padding: 22px;
 }
 
 body {
     background-color: #21252c;
 }
-
+/* End of Hero */
 
 /* Main */
- main h2 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 25px;
- }
+.main-container {
+    margin: 0px 200px 0px 200px;
+}
 
- main h3 {
+.main-container h2 {
+    display: flex;
+    justify-content: start;
+    margin: 0px 0px 25px 0px;
+}
+
+.main-container h3 {
     color: #ffff;
-    padding-top: 0px;
- }
+}
 
- .main p {
-    padding: 0px 150px 0px 150px;
- }
+.main-container p {
+    margin: 0px 0px 0px 0px;
+}
 
- .about-null {
+.about-null {
     background-color: #0d1117;
-    width: 700px;
+    width: 650px;
     height: 350px;
- }
+    margin: 25px 0px 25px 0px;
+}
 
- .about-box {
+.about-null:hover {
+    opacity: 50%;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.about-box {
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px 0px 10px 0px;
- } 
+    justify-content: space-between;
+}
+/* End of Main */
 
- /* Work Section */
-
- .work-examples {
+/* Work Section */
+.work-examples {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
- }
+}
 
- .work-box {
+.work-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
- }
+}
 
- .work-null {
+.work-null {
     background-color: #0d1117;
     width: 350px;
     height: 350px;
- }
+}
 
- .work-null:hover {
+.work-null:hover {
     opacity: 50%;
     transition: all 0.3s ease 0s;
     cursor: pointer;
- }
+}
 
- .main h3 {
+.main-container h3 {
     text-transform: uppercase;
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 22px;
-    padding: 25px;
- }
+    margin: 25px 0px 0px 0px;
+}
 
- .main h3::first-line {
+.main-container h3::first-line {
     text-transform: uppercase;
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
     font-style: normal;
- }
-
+}
 /* End of Work Section */
+/* Contact */
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact p {
+    text-transform: uppercase;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#contact span {
+    text-transform: none;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.social-links img:hover {
+    opacity: 50%;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+/* End of Contact Section */
 
 /* Footer */
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0d1117;
+    padding: 50px 0px 50px 0px;
+    margin: 100px 0px 0px 0px;
 }
 
 footer p {
@@ -226,11 +262,4 @@ footer p::first-line {
     font-weight: 700;
     font-style: normal;
 }
-
 /* End of Footer Section */
-
-
-
-
-
-
