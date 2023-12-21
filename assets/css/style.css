@@ -32,6 +32,14 @@ h2, h3 {
     font-style: normal;
 }
 
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 /* Header and Navigation Bar */
 .header {
     display: flex;
@@ -44,8 +52,8 @@ h2, h3 {
 }
 
 .logo {
-    height: 7%;
-    width: 7%;
+    height: 100px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -61,7 +69,6 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    margin-right: 300px;
 }
 
 h1::first-line {
@@ -74,6 +81,7 @@ h1::first-line {
 
 .nav-links {
     list-style: none;
+    margin-left: 350px;
 }
 
 .nav-links li {
@@ -108,6 +116,12 @@ a:visited {
     line-height: 22px;
 }
 
+.hero p {
+    width: 375px;
+    min-width: 250px;
+}
+
+
 .hero img {
     width: 225px;
     height: 225px;
@@ -118,7 +132,7 @@ a:visited {
 
 .hero img:hover {
     opacity: 50%;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; 
 }
 
 body {
@@ -128,6 +142,8 @@ body {
 
 /* Main */
 .main-container {
+    display: flex;
+    flex-direction: column;
     margin: 0px 200px 0px 200px;
 }
 
@@ -165,6 +181,23 @@ body {
 /* End of Main */
 
 /* Work Section */
+.work-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.work-heronull {
+    background-color: #0d1117;
+    width: 100%;
+    height: 450px;
+}
+
+.work-heronull:hover {
+    opacity: 50%;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
 .work-examples {
     display: flex;
     justify-content: space-between;
@@ -174,14 +207,15 @@ body {
 .work-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: start;
 }
 
 .work-null {
     background-color: #0d1117;
     width: 350px;
     height: 350px;
+    margin: 50px 0px 0px 0px;
 }
 
 .work-null:hover {
@@ -206,6 +240,7 @@ body {
     font-style: normal;
 }
 /* End of Work Section */
+
 /* Contact */
 .contact-content {
     display: flex;
@@ -227,7 +262,7 @@ body {
 .social-links img {
     width: 40px;
     height: 40px;
-    margin: 5px;
+    margin: 0px 5px 5px 5px;
 }
 
 .social-links img:hover {
@@ -263,3 +298,62 @@ footer p::first-line {
     font-style: normal;
 }
 /* End of Footer Section */
+
+/* Media Queries */
+@media screen and (max-width: 710px) {
+
+    .main-container {
+        margin: 0px 25px 0px 25px;
+
+    }
+
+    .nav-links li {
+        padding: 0px 0px 0px 0px;
+        display: block;
+
+    }
+
+    .nav-links {
+        margin-left: 200px;
+        }
+    
+}
+
+@media screen and (max-width: 900px) {
+    
+    .main-container {
+        margin: 0px 25px 0px 25px;
+
+    }
+
+    .nav-links li {
+        padding: 0px 0px 0px 0px;
+        display: block;
+
+    }
+
+    .nav-links {
+        margin-left: 200px;
+        }
+    
+}
+
+@media screen and (max-width: 1700px) {
+
+    .main-container {
+        margin: 0px 25px 0px 25px;
+
+    }
+
+    .work-hero, .work-examples, .work-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
