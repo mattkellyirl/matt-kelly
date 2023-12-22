@@ -1,6 +1,6 @@
 .root {
     --dark: #0d1117;
-    --background: #21252c;
+    --background: #161b22;
     --orange: #e25000;   
 }
 
@@ -98,7 +98,7 @@ h1::first-line {
 }
 
 .nav-links li a:hover {
-    color: #e25000;
+    color: #ffffff;
     transition: all 0.3s ease 0s;
 }
 
@@ -136,7 +136,7 @@ a:visited {
 }
 
 body {
-    background-color: #21252c;
+    background-color: #161b22;
 }
 /* End of Hero */
 
@@ -161,17 +161,9 @@ body {
     margin: 0px 0px 0px 0px;
 }
 
-.about-null {
-    background-color: #0d1117;
+.about-box img {
     width: 650px;
-    height: 350px;
     margin: 25px 0px 25px 0px;
-}
-
-.about-null:hover {
-    opacity: 50%;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
 }
 
 .about-box {
@@ -186,17 +178,16 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.work-heronull {
-    background-color: #0d1117;
+
+.work-hero-img img {
     width: 100%;
-    height: 450px;
 }
 
-.work-heronull:hover {
+.work-hero-img img:hover {
     opacity: 50%;
     transition: all 0.3s ease 0s;
-    cursor: pointer;
 }
+
 
 .work-examples {
     display: flex;
@@ -211,14 +202,13 @@ body {
     text-align: start;
 }
 
-.work-null {
-    background-color: #0d1117;
+.work-box img {
     width: 350px;
     height: 350px;
     margin: 50px 0px 0px 0px;
 }
 
-.work-null:hover {
+.work-box img:hover {
     opacity: 50%;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -270,6 +260,7 @@ body {
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
+
 /* End of Contact Section */
 
 /* Footer */
@@ -356,4 +347,3 @@ footer p::first-line {
         align-items: center;
     }
 }
-
