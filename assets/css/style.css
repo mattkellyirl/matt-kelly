@@ -17,10 +17,11 @@ p {
 }
 
 hr {
+    width: 100%;
     height: 2px;
     border: none;
     background-color: #495059;
-    margin: 100px 0px 100px 0px;
+    margin: 10% 0% 10% 0%;
 
 }
 
@@ -43,16 +44,15 @@ h3 {
 /* Header and Navigation Bar */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0px 5%;
+    padding: 0% 5%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0d1117;
     line-height: 22px;
 }
 
 .logo {
-    height: 100px;
     width: 100px;
     cursor: pointer;
 }
@@ -81,7 +81,6 @@ h1::first-line {
 
 .nav-links {
     list-style: none;
-    margin-left: 350px;
 }
 
 .nav-links li {
@@ -112,21 +111,18 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 270px 100px 270px 100px;
-    line-height: 22px;
+    margin: 30% 0% 20% 0%;
 }
 
 .hero p {
-    width: 375px;
-    min-width: 250px;
+    width: 50%;
 }
 
-
 .hero img {
-    width: 225px;
-    height: 225px;
+    width: 20%;
+    min-width: 100px;
     border-radius: 100%;
-    margin: 0px 25px 0px 0px;
+    margin: 0% 4% 0% 0%;
 
 }
 
@@ -144,41 +140,35 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
-    margin: 0px 200px 0px 200px;
+    width: 100%;
+    margin: auto;
+    padding: 0% 20% 0% 20%;
 }
 
 .main-container h2 {
     display: flex;
     justify-content: start;
-    margin: 0px 0px 25px 0px;
+    margin: 0% 0% 2% 0%;
 }
 
 .main-container h3 {
     color: #ffff;
 }
 
-.main-container p {
-    margin: 0px 0px 0px 0px;
-}
-
-.about-box img {
-    width: 650px;
-    margin: 25px 0px 25px 0px;
-}
-
-.about-box {
+.about-images {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-images img {
+    max-width: 100%;
+    margin: 2% 0% 2% 0%;
+
 }
 /* End of Main */
 
 /* Work Section */
-.work-hero {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .work-hero-img img {
     width: 100%;
 }
@@ -188,24 +178,15 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-
 .work-examples {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-}
-
-.work-box {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    text-align: start;
+    gap: 5%;
 }
 
 .work-box img {
-    width: 350px;
-    height: 350px;
-    margin: 50px 0px 0px 0px;
+    max-width: 100%;
+    margin: 10% 0% 0% 0%;
 }
 
 .work-box img:hover {
@@ -220,7 +201,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 22px;
-    margin: 25px 0px 0px 0px;
+    margin: 1% 0% 0% 0%;
 }
 
 .main-container h3::first-line {
@@ -260,7 +241,6 @@ body {
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
-
 /* End of Contact Section */
 
 /* Footer */
@@ -269,8 +249,8 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #0d1117;
-    padding: 50px 0px 50px 0px;
-    margin: 100px 0px 0px 0px;
+    padding: 3% 0% 3% 0%;
+    margin: 6% 0% 0% 0%;
 }
 
 footer p {
@@ -290,60 +270,18 @@ footer p::first-line {
 }
 /* End of Footer Section */
 
-/* Media Queries */
+/* Mobile Responsive at 710px */
 @media screen and (max-width: 710px) {
 
-    .main-container {
-        margin: 0px 25px 0px 25px;
-
-    }
-
     .nav-links li {
-        padding: 0px 0px 0px 0px;
         display: block;
-
     }
-
-    .nav-links {
-        margin-left: 200px;
-        }
-    
-}
-
-@media screen and (max-width: 900px) {
-    
-    .main-container {
-        margin: 0px 25px 0px 25px;
-
-    }
-
-    .nav-links li {
-        padding: 0px 0px 0px 0px;
-        display: block;
-
-    }
-
-    .nav-links {
-        margin-left: 200px;
-        }
-    
-}
-
-@media screen and (max-width: 1700px) {
 
     .main-container {
-        margin: 0px 25px 0px 25px;
-
+        padding: 5%;
     }
 
-    .work-hero, .work-examples, .work-box {
+    .work-hero, .work-examples {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .about-box {
-        flex-direction: column;
-        align-items: center;
     }
 }
