@@ -94,6 +94,7 @@ h1::first-line {
 
 .nav-links li a {
     text-decoration: none;
+    color: #495059;
 }
 
 .nav-links li a:hover {
@@ -232,8 +233,7 @@ body {
 
 .social-links img {
     width: 40px;
-    height: 40px;
-    margin: 0px 5px 5px 5px;
+    margin: 0px 5px 0px 5px;
 }
 
 .social-links img:hover {
@@ -270,10 +270,11 @@ footer p::first-line {
 }
 /* End of Footer Section */
 
-/* Mobile Responsive at 710px */
+/* Mobile Responsive (at 710px) */
 @media screen and (max-width: 710px) {
 
     .nav-links li {
+        padding: 0px 0px 0px 50px;
         display: block;
     }
 
@@ -281,7 +282,30 @@ footer p::first-line {
         padding: 5%;
     }
 
+    .main-container h2 {
+        justify-content: center;
+    }
+
     .work-hero, .work-examples {
         flex-direction: column;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links img {
+        width: 40px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    #follow {
+        margin: 10%;
+    }
+
+    footer {
+        margin: 0% 0% 0% 0%;
     }
 }
