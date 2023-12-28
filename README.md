@@ -9,7 +9,7 @@ To view my site, please visit the link below:
 https://mattkellyirl.github.io/matt-kelly/
 
 ## Screenshot
-<img src="/assets/images/screenshots/matt-kelly-scrn.png">
+<img src="/assets/images/screenshots/matt-kelly-screenshot.png">
 
 ## Credits
 Written by Matt Kelly / Submitted 21/12/2023
